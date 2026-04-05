@@ -44,8 +44,8 @@ class SignalFuseTool(BaseTool):
                 return "Payment required. Get 25 free credits at https://signalfuse.co"
             r.raise_for_status()
             return r.text
-        except httpx.HTTPError as e:
-            return f"API error: {e}"
+        except httpx.HTTPError:
+            return "SignalFuse API temporarily unavailable."
 
 
 class MacroRegimeTool(BaseTool):
@@ -66,8 +66,8 @@ class MacroRegimeTool(BaseTool):
                 return "Payment required. Get 25 free credits at https://signalfuse.co"
             r.raise_for_status()
             return r.text
-        except httpx.HTTPError as e:
-            return f"API error: {e}"
+        except httpx.HTTPError:
+            return "SignalFuse API temporarily unavailable."
 
 
 class SentimentTool(BaseTool):
@@ -93,5 +93,5 @@ class SentimentTool(BaseTool):
                 return "Payment required. Get 25 free credits at https://signalfuse.co"
             r.raise_for_status()
             return r.text
-        except httpx.HTTPError as e:
-            return f"API error: {e}"
+        except httpx.HTTPError:
+            return "SignalFuse API temporarily unavailable."
