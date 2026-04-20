@@ -41,7 +41,7 @@ BTC, ETH, SOL, DOGE, PEPE, WIF, BONK, ARB, OP, AVAX
 
 ## Credits
 
-Get 25 free calls at [signalfuse.co](https://signalfuse.co) — no signup.
+Get 5 free calls at [signalfuse.co](https://signalfuse.co) — no signup.
 
 ## Disclaimer
 

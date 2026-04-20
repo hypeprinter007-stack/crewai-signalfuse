@@ -41,7 +41,7 @@ class SignalFuseTool(BaseTool):
         try:
             r = httpx.get(f"{API_BASE}/v1/signal/{symbol}", headers=headers, timeout=10)
             if r.status_code == 402:
-                return "Payment required. Get 25 free credits at https://signalfuse.co"
+                return "Payment required. Get 5 free credits at https://signalfuse.co"
             r.raise_for_status()
             return r.text
         except httpx.HTTPError:
@@ -63,7 +63,7 @@ class MacroRegimeTool(BaseTool):
         try:
             r = httpx.get(f"{API_BASE}/v1/regime", headers=headers, timeout=10)
             if r.status_code == 402:
-                return "Payment required. Get 25 free credits at https://signalfuse.co"
+                return "Payment required. Get 5 free credits at https://signalfuse.co"
             r.raise_for_status()
             return r.text
         except httpx.HTTPError:
@@ -90,7 +90,7 @@ class SentimentTool(BaseTool):
         try:
             r = httpx.get(f"{API_BASE}/v1/sentiment/{symbol}", headers=headers, timeout=10)
             if r.status_code == 402:
-                return "Payment required. Get 25 free credits at https://signalfuse.co"
+                return "Payment required. Get 5 free credits at https://signalfuse.co"
             r.raise_for_status()
             return r.text
         except httpx.HTTPError:
